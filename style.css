@@ -101,4 +101,11 @@ textarea {
     font-size: 36px;
     padding: 5px;
     border-radius: 10px;
+    max-width: 100vw;
+}
+
+.close-modal {
+    padding: 5px;
+    color: white;
+    background-color: crimson;
 }
