@@ -31,3 +31,55 @@ footer {
     background: #333333;
     color: white;
 }
+
+nav {
+    position: absolute;
+}
+
+button {
+    outline: none;
+    border: none;
+    position: relative;
+    padding: 20px 35px;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #000;
+}
+
+button::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.links-btn {
+    background: rgb(181, 220, 233);
+    color: #1c1c1c;
+}
+
+.links-btn:hover {
+    background: transparent;
+}
+
+.links-btn:hover::after {
+    background: rgb(92, 228, 194);
+    transform: scale(1);
+    z-index: -1;
+}
+
+.links-btn::after {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.1);
+}
