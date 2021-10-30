@@ -94,7 +94,8 @@ button::after {
     justify-content: center;
 }
 
-textarea {
+textarea,
+a {
     border-style: dotted;
     z-index: 4;
     background-color: aliceblue;
